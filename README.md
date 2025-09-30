@@ -1,6 +1,9 @@
 # TTGemma - Tiny Trilingual Gemma
 
-![TTGemma Logo](./TTGemmaLogo.png)
+<p align="center">
+  <img src="./TTGemmaLogo.png" alt="TTGemma Logo" width="220"/>
+</p>
+
 
 **TTGemma** is a multilingual autoregressive language model (~150M parameters) developed from scratch with a focus on English, Hindi, and Nepali. The project encompasses the complete lifecycle of language model development: from large-scale multilingual data collection and tokenizer training to distributed pretraining and parameter-efficient finetuning (PEFT) for downstream tasks.
 
