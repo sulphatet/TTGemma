@@ -9,7 +9,7 @@
 
 ---
 
-## 🚀 Project Overview
+## Project Overview
 
 * **Model Type:** Decoder-only Transformer (Gemma-style)
 * **Languages Supported:** English, Hindi, Nepali
@@ -19,7 +19,7 @@
 
 ---
 
-## 📦 Repository Structure
+## Repository Structure
 
 ```
 TTGemma/
@@ -32,7 +32,7 @@ TTGemma/
 
 ---
 
-## 🔑 Key Features
+## Key Features
 
 ### Pretraining
 
@@ -63,26 +63,23 @@ TTGemma/
 
   * Language tags: `<eng>`, `<hin>`, `<nep>`
   * Sequence tokens: `<s>`, `</s>`, `<pad>`, `<unk>`
-
-This ensures robust multilingual handling and better generalization.
+    
+(Check references for more details on the design choice)
 
 ---
 
 ### Finetuning (PEFT)
 
-* **Approach:** LoRA adapters (<1% of total parameters trainable).
-* **Advantages:** Avoids catastrophic forgetting, low compute/memory overhead, easy portability.
-* **Example Provided:**
+* **Approach:** LoRA adapters.
+* **Example Scripts Provided:**
 
   * *Clickbait Detection* (binary classification, EN + HI).
   * Small dataset included.
   * Example script demonstrates end-to-end LoRA integration.
 
-Future-proof design supports adding more tasks via adapter modules.
-
 ---
 
-## 📊 Evaluation
+## Evaluation
 
 ### Pretraining (Perplexity on validation set)
 
@@ -103,7 +100,7 @@ A script is available, demonstrating finetuning the pretrained model for downstr
 
 ## References:
 
-Preprocessing steps followed: Thakur, Aamod, et al. "The Art of Breaking Words: Rethinking Multilingual Tokenizer Design." arXiv preprint arXiv:2508.06533 (2025).
+Preprocessing, tokenizer steps followed: Thakur, Aamod, et al. "The Art of Breaking Words: Rethinking Multilingual Tokenizer Design." arXiv preprint arXiv:2508.06533 (2025).
 
 Gemma Architecture: Team, Gemma, et al. "Gemma 3 technical report." arXiv preprint arXiv:2503.19786 (2025).
 
